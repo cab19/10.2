@@ -31,7 +31,7 @@ function WorkerTaskList (props){
 
     const filteredTasks = tmpData.filter((task)=>{
 
-        console.log('searchTerm: '+searchTerm.term+" : "+task.expiry)
+        //console.log('searchTerm: '+searchTerm.term+" : "+task.expiry)
         
         if(searchTerm.criteria=='title'){
             return task.title.toLowerCase().includes(searchTerm.term.toLowerCase()); // filter based on title
